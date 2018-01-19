@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>测试html5离线缓存</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div id="root"></div>
+	<div>
+		<img src="./img/chrome.png" alt="">
+	</div>
+	<script type="text/javascript" src="./lib/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script>
+	    // applicationCache.addEventListener('updateready', function(e) {
+	    //     if (applicationCache.status == applicationCache.UPDATEREADY) {
+	    //         applicationCache.swapCache(); //使用新版本资源
+	    //         window.location.reload(); //刷新页面
+	    //     }
+	    // }, false);
+	</script>
+</body>
+</html>

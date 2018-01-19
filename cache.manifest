@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# v0.13
+
+CACHE:
+lib/jquery-1.12.4.min.js
+lib/echarts.common.min.js
+img/chrome.png
+js/index.js
+css/index.css
+index.html
+
+NETWORK:
+*
+
+FALLBACK:
+404.html
