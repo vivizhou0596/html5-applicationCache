@@ -14,15 +14,15 @@
 	<script>
 		var fileBtn = document.getElementById('fileBtn')
 		var img = document.querySelector('#fileImg')
-		fileBtn.onchange = function(e){
-			console.log(e.target.files[0])
+		fileBtn.onchange = function(e){//添加事件监听
+			//console.log(e.target.files[0])
 			fileReader(e.target.files[0])
 		}
 		function fileReader(file){
-			var reader = new FileReader()
-			reader.onload = function(e){
-				console.log(e.target.result)
-				img.src = e.target.result
+			var reader = new FileReader() //调用FileReader构造函数，创建一个新的filereader对象
+			reader.onload = function(e){//文件读取成功完成时触发
+				//console.log(e.target.result)
+				img.src = e.target.result //将生成的base64 的图片地址加载到页面
 			}
 			//reader.readAsText(file)//读取文件里的文本
 			reader.readAsDataURL(file)//base64 的图片地址
